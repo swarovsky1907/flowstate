@@ -31,7 +31,8 @@ def register(
     new_user = User(
         name=user.name,
         email=user.email,
-        hashed_password=hash_password(user.password)
+        hashed_password=hash_password(user.password),
+        daily_study_hours=user.daily_study_hours
     )
 
     # Save user to database

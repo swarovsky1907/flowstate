@@ -108,6 +108,12 @@ def complete_session(
             detail="Session not found"
         )
 
+    difference = (data.completed_hours - session.completed_hours)
+
+    task = session.task
+
+    task.completed_hours += difference
+
     session.completed_hours = (
         data.completed_hours
     )
@@ -117,12 +123,6 @@ def complete_session(
         session.planned_hours
     ):
         session.is_completed = True
-
-    task = session.task
-
-    task.completed_hours += (
-        data.completed_hours
-    )
 
     if (
         task.completed_hours >=

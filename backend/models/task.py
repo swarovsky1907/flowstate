@@ -57,5 +57,6 @@ class Task(Base):
 
     study_sessions = relationship(
     "StudySession",
-    back_populates="task"
+    back_populates="task",
+    cascade="all, delete-orphan"
     )

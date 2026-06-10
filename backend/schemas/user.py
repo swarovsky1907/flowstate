@@ -5,8 +5,15 @@ from typing import Optional, Literal
 class UserRegister(BaseModel):
     name: str
     email: EmailStr
-    password: str = Field(min_length=8, max_length=64)
+    password: str = Field(
+        min_length=8,
+        max_length=64
+    )
 
+    daily_study_hours: int = Field(
+        ge=1,
+        le=24
+    )
 class UserLogin(BaseModel):
     email: EmailStr
     password: str
