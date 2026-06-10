@@ -18,6 +18,7 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5173",
         "https://panic-planner.vercel.app",
+        "https://panic-planner-swarovsky1907s-projects.vercel.app/"
     ],
     allow_credentials=True,
     allow_methods=["*"],
