@@ -1,6 +1,6 @@
-# Panic Planner
+# FlowState
 
-Panic Planner is a smart study planner that creates personalized schedules and dynamically adapts them as users complete tasks, miss sessions, or add new work.
+FlowState is a smart study planner that creates personalized schedules and dynamically adapts them as users complete tasks, miss sessions, or add new work.
 
 ## Features
 
