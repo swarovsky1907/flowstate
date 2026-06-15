@@ -34,7 +34,7 @@ export default function Sidebar() {
         "
         >
         
-        <h1>Panic Planner</h1>
+        <h1>FlowState</h1>
         </Link>
       
 
